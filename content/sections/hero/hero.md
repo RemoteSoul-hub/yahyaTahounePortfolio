@@ -1,10 +1,8 @@
 ---
-introduction: "hey it's me"
-tagline: 'Design. Code. Experiment'
-cta_label: 'View Documentation'
-cta_link: 'https://github.com/Knochenmark/gatsby-starter-level-2/blob/master/README.md'
+introduction: "Hey it's me"
+tagline: 'Design. Code. Debug'
+cta_label: 'Get My Resume'
+cta_link: '#'
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-sed diam nonumy eirmod tempor invidunt ut labore
-et dolore magna aliquyam erat, sed diam voluptua.
+Creating Functional, Clean and Elegant Web Experiences.

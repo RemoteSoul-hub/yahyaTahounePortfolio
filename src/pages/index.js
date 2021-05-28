@@ -2,13 +2,10 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import About from '../components/about';
-import CardGrid from '../components/card-grid';
 import Contact from '../components/contact';
 import FeaturedProjects from '../components/featured-projects';
 import Hero from '../components/hero';
-import Facts from '../components/facts';
 import Layout from '../components/layout';
-import RecentPosts from '../components/recent-posts';
 import SEO from '../components/seo';
 import { indexMenuLinks } from '../components/_config/menu-links';
 
@@ -26,11 +23,8 @@ const Index = ({ data }) => {
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
       <Hero data={heroData} />
-      <Facts/>
       <About data={data.about} />
-      <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Features" id="features" />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
-      <RecentPosts data={data.blog.edges} />
       <Contact data={data.contact} />
     </Layout>
   );
@@ -111,37 +105,8 @@ export const query = graphql`
       }
     }
 
-    blog: allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-      limit: 4
-      filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { published: { ne: false } } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            tags
-            date(formatString: "D MMMM, YYYY")
-            description
-            cover_image {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          excerpt
-          fields {
-            slug
-          }
-        }
-      }
-    }
-
     contact: markdownRemark(fileAbsolutePath: { regex: "/content/sections/contact/" }) {
       frontmatter {
-        phone
         email
         address
       }

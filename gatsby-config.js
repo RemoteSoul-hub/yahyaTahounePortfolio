@@ -1,11 +1,11 @@
 module.exports = {
-  pathPrefix: '/gatsby-starter-level-2',
+  pathPrefix: '/yahya-portfolio-lvl2',
   siteMetadata: {
-    title: 'Level 2',
-    titleTemplate: '%s · Level 2',
-    image: '/images/logo.png',
-    author: 'Max Mustermann',
-    description: 'Gatsby starter to quickly setup your portfolio and boost it to the next level.',
+    title: 'Yahya Tahoune',
+    titleTemplate: '%s · Portfolio',
+    image: '/images/me.png',
+    author: 'Yahya Tahoune',
+    description: "Yahya Tahoune's Portfolio. Front End Developer. Blogger. Check out my work!",
     url: 'https://knochenmark.github.io',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
