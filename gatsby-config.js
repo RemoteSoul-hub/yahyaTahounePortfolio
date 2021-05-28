@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/yahya-portfolio-lvl2',
+  pathPrefix: '/yahyaTahounePortfolio',
   siteMetadata: {
     title: 'Yahya Tahoune',
     titleTemplate: '%s · Portfolio',
