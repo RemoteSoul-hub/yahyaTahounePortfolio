@@ -6,7 +6,7 @@ module.exports = {
     image: '/images/me.png',
     author: 'Yahya Tahoune',
     description: "Yahya Tahoune's Portfolio. Front End Developer. Blogger. Check out my work!",
-    url: 'https://yahyatahoune.github.io',
+    url: 'https://yahyaTahoune.github.io',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
